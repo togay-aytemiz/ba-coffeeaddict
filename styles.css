@@ -115,7 +115,8 @@ COLORS:
  
  .product-card-detail {
      display: flex;
-     gap: 2rem;
+     align-content: center;
+     gap: 1.5rem;
  }
  
  .more-info-button {
@@ -140,10 +141,13 @@ COLORS:
  .product-title{
     font-size: 2rem;
     margin-bottom: -20px;
-    margin-top: -10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #2B3D34;
     
+ }
+
+ h3 {
+    margin-top: 5px;
  }
 
 
@@ -228,21 +232,33 @@ form {
     color:#2B3D34
 }
 
-
  
  /* RESPONSIVE SETTINGS  */
 
- @media screen and (max-width: 600px) {
-     .product-img{
-         width: 50%;
-     }
- }
- 
- @media screen and (max-width: 400px) {
-     .nav-links {
-         flex-wrap: wrap;
-     }
- }
+ @media screen and (max-width: 650px) {
+    /* .product-img{
+        width: 50%;
+       
+    } */
+
+    .product-card-detail {
+       flex-direction: column;
+    }
+
+    .footer-elements{
+       flex-direction: column;
+    }
+
+    .product-card{
+       flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav-links {
+        flex-wrap: wrap;
+    }
+}
 
 
 
